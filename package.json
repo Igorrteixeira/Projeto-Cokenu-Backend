@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
-    "build": "tsc"
+    "start": "node ./build/index.js",
+      "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
+      "build": "tsc",
+      "migrations": "tsnd ./src/data/migrations.ts"
   },
   "engines": {
     "node":"v16.15.1"
